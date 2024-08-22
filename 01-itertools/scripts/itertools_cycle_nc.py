@@ -20,22 +20,22 @@ def banner(title, sep="*", nchar=72):
 banner("Example 1: Using cycle() to Repeat a List Indefinitely")
 
 l = [1, 10, 100]
-sum_value = 0
+SUM_VALUE = 0
 
 for i in itertools.cycle(l):
     print(i)
-    sum_value += i
-    if sum_value > 300:
+    SUM_VALUE += i
+    if SUM_VALUE > 300:
         break
 
 banner("Example 2: Using cycle() with a Range of Numbers")
 
-sum_value = 0
+SUM_VALUE = 0
 
-for i in itertools.cycle(range(3)):
+for i in itertools.cycle(range(3)):  
     print(i)
-    sum_value += i
-    if sum_value > 5:
+    SUM_VALUE += i  
+    if SUM_VALUE > 5:  
         break
 
 banner("Example 3: Combining cycle() with zip() for Repeating Patterns")
@@ -47,12 +47,12 @@ print(list(zip(itertools.cycle(lst_1), lst_2)))
 
 banner("Example 4: Infinite Iteration with cycle()")
 
-counter = 0
+COUNTER = 0
 
 for item in itertools.cycle(['A', 'B', 'C']):
     print(item)
-    counter += 1
-    if counter > 6:
+    COUNTER += 1
+    if COUNTER > 6:
         break
 
 banner("Example 5: Cycling Through Multiple Iterables")
@@ -77,12 +77,12 @@ for step in range(7):
 banner("Example 7: Cycling Through an Infinite Pattern with Conditional Exit")
 
 traffic_lights = ['green', 'yellow', 'red']
-red_count = 0
+RED_COUNT = 0
 light_cycle = itertools.cycle(traffic_lights)
 
-while red_count < 2:
+while RED_COUNT < 2:
     current_light = next(light_cycle)
     print(current_light)
     if current_light == 'red':
-        red_count += 1
+        RED_COUNT += 1
         

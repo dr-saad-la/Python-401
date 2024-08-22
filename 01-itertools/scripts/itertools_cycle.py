@@ -30,12 +30,12 @@ for i in itertools.cycle(l):
 banner("Example 2: Using cycle() with a Range of Numbers")
 
 # Use cycle() with a range object to repeat a sequence of numbers
-sum_value = 0
+SUM_VALUE = 0
 
 for i in itertools.cycle(range(3)):  # cycle through 0, 1, 2 repeatedly
     print(i)
-    sum_value += i  # Add the current value to the sum
-    if sum_value > 5:  # Stop the loop when the sum exceeds 5
+    SUM_VALUE += i  # Add the current value to the sum
+    if SUM_VALUE > 5:  # Stop the loop when the sum exceeds 5
         break
 
 
