@@ -85,3 +85,4 @@ while red_count < 2:
     print(current_light)
     if current_light == 'red':
         red_count += 1
+        

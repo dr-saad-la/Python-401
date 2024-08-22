@@ -90,3 +90,4 @@ for item in itertools.cycle(['A', 'B', 'C']):
     counter += 1
     if counter > 6:  # Break after 7 iterations
         break
+        
