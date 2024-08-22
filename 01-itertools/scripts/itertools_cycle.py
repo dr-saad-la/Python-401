@@ -58,13 +58,13 @@ banner("Example 4: Infinite Iteration with cycle()")
 # Another practical use of cycle() is to create an infinite loop of characters or actions.
 # In this example, we simulate a repetitive task using cycle().
 
-counter = 0  # Initialize a counter to limit the loop
+COUNTER = 0  # Initialize a counter to limit the loop
 
 # Use cycle() to indefinitely loop through the sequence ['A', 'B', 'C']
 for item in itertools.cycle(['A', 'B', 'C']):
     print(item)
-    counter += 1
-    if counter > 6:  # Stop after 7 iterations
+    COUNTER += 1
+    if COUNTER > 6:  # Stop after 7 iterations
         break
 
 banner("Example 5: Cycling Through Multiple Iterables")
@@ -108,13 +108,13 @@ traffic_lights = ['green', 'yellow', 'red']
 light_cycle = itertools.cycle(traffic_lights)
 
 # Simulate the traffic light system until it turns red twice
-red_count = 0
+RED_COUNT = 0
 
-while red_count < 2:
+while RED_COOUNT < 2:
     current_light = next(light_cycle)
     print(current_light)
     if current_light == 'red':
-        red_count += 1
+        RED_COUNT += 1
 
 
 # The loop exits after the red light appears twice.
