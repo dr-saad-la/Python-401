@@ -1,11 +1,22 @@
+"""
+This module demonstrates the use of itertools.count() and itertools.cycle() through various examples.
+"""
+
 import itertools
 
 def banner(title, sep="*", nchar=72):
+    """
+    Print a banner with a title centered, surrounded by a separator character.
+    
+    Args:
+        title (str): The title to display.
+        sep (str): The separator character.
+        nchar (int): The number of characters for the banner width.
+    """
     print(sep * nchar)
     print(title.center(nchar))
     print(sep * nchar)
 
-print()
 banner("Example 1: Count Method, No Arguments")
 for i in itertools.count():
     print(i)
@@ -50,14 +61,14 @@ for i in itertools.count():
         break
 
 banner("Example 8: count() with zip to Pair Elements with Indices")
-l1 = ['a', 'b', 'c']
-l2 = ['x', 'y', 'z']
+list_1 = ['a', 'b', 'c']
+list_2 = ['x', 'y', 'z']
 
-indexed_pairs = list(zip(itertools.count(), l1, l2))
+indexed_pairs = list(zip(itertools.count(), list_1, list_2))
 print(indexed_pairs)
 
 banner("Example 9: Using enumerate() with zip()")
-enumerated_pairs = list(enumerate(zip(l1, l2)))
+enumerated_pairs = list(enumerate(zip(list_1, list_2)))
 print(enumerated_pairs)
 
 banner("Example 10: Infinite Iteration with cycle()")

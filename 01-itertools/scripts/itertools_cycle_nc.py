@@ -1,11 +1,22 @@
+"""
+This module demonstrates the use of itertools.cycle() through various examples.
+"""
+
 import itertools
 
 def banner(title, sep="*", nchar=72):
+    """
+    Print a banner with a title centered, surrounded by a separator character.
+
+    Args:
+        title (str): The title to display.
+        sep (str): The separator character.
+        nchar (int): The number of characters for the banner width.
+    """
     print(sep * nchar)
     print(title.center(nchar))
     print(sep * nchar)
 
-print()
 banner("Example 1: Using cycle() to Repeat a List Indefinitely")
 
 l = [1, 10, 100]
@@ -66,8 +77,8 @@ for step in range(7):
 banner("Example 7: Cycling Through an Infinite Pattern with Conditional Exit")
 
 traffic_lights = ['green', 'yellow', 'red']
-light_cycle = itertools.cycle(traffic_lights)
 red_count = 0
+light_cycle = itertools.cycle(traffic_lights)
 
 while red_count < 2:
     current_light = next(light_cycle)

@@ -67,7 +67,6 @@ for item in itertools.cycle(['A', 'B', 'C']):
     if counter > 6:  # Stop after 7 iterations
         break
 
-
 banner("Example 5: Cycling Through Multiple Iterables")
 
 # cycle() can also be used with multiple iterables by combining it with itertools.chain()
