@@ -32,10 +32,10 @@ banner("Example 2: Using cycle() with a Range of Numbers")
 
 SUM_VALUE = 0
 
-for i in itertools.cycle(range(3)):  
+for i in itertools.cycle(range(3)):
     print(i)
-    SUM_VALUE += i  
-    if SUM_VALUE > 5:  
+    SUM_VALUE += i
+    if SUM_VALUE > 5:
         break
 
 banner("Example 3: Combining cycle() with zip() for Repeating Patterns")
@@ -85,4 +85,3 @@ while RED_COUNT < 2:
     print(current_light)
     if current_light == 'red':
         RED_COUNT += 1
-        

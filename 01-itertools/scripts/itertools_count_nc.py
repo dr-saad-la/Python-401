@@ -7,7 +7,7 @@ import itertools
 def banner(title, sep="*", nchar=72):
     """
     Print a banner with a title centered, surrounded by a separator character.
-    
+
     Args:
         title (str): The title to display.
         sep (str): The separator character.
@@ -78,4 +78,3 @@ for item in itertools.cycle(['A', 'B', 'C']):
     COUNTER += 1
     if COUNTER > 6:
         break
-        

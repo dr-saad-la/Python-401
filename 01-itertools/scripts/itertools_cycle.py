@@ -18,13 +18,13 @@ banner("Example 1: Using cycle() to Repeat a List Indefinitely")
 l = [1, 10, 100]
 
 # Initialize a variable to sum the values from the cycle
-sum_value = 0
+SUM_VALUE = 0
 
 # Use cycle() to iterate over the list indefinitely
 for i in itertools.cycle(l):
     print(i)
-    sum_value += i  # Add the current value to the sum
-    if sum_value > 300:  # Stop the loop when the sum exceeds 300
+    SUM_VALUE += i  # Add the current value to the sum
+    if SUM_VALUE > 300:  # Stop the loop when the sum exceeds 300
         break
 
 banner("Example 2: Using cycle() with a Range of Numbers")
@@ -110,7 +110,7 @@ light_cycle = itertools.cycle(traffic_lights)
 # Simulate the traffic light system until it turns red twice
 RED_COUNT = 0
 
-while RED_COOUNT < 2:
+while RED_COUNT < 2:
     current_light = next(light_cycle)
     print(current_light)
     if current_light == 'red':
