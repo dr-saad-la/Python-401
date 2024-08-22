@@ -50,7 +50,7 @@ lst_2 = [0, 1, 2, 3, 4, 5, 6]
 print(list(zip(itertools.cycle(lst_1), lst_2)))
 
 
-# itertools.cycle() allows you to seamlessly handle cases where one list is shorter than another, 
+# itertools.cycle() allows you to seamlessly handle cases where one list is shorter than another,
 # ensuring that the shorter list's elements are cycled through to match the length of the longer list.
 
 banner("Example 4: Infinite Iteration with cycle()")
