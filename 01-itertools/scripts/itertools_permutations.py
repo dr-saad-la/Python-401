@@ -96,6 +96,7 @@ lst = ['a', 'b', 'c', 'd']
 # Generate and print all permutations
 for v in itertools.permutations(lst):
     print(v)
+
 # Output:
 # ('a', 'b', 'c', 'd')
 # ('a', 'b', 'd', 'c')
