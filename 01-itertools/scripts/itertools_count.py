@@ -84,10 +84,10 @@ print(enumerated_pairs)
 banner("Example 10: Infinite Iteration with cycle()")
 # The itertools.cycle() function repeats the elements of an iterable indefinitely
 # Here, we cycle through a short list indefinitely.
-counter = 0
+COUNTER = 0
 for item in itertools.cycle(['A', 'B', 'C']):
     print(item)
-    counter += 1
-    if counter > 6:  # Break after 7 iterations
+    COUNTER += 1
+    if COUNTER > 6:  # Break after 7 iterations
         break
         

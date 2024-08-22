@@ -72,10 +72,10 @@ enumerated_pairs = list(enumerate(zip(list_1, list_2)))
 print(enumerated_pairs)
 
 banner("Example 10: Infinite Iteration with cycle()")
-counter = 0
+COUNTER = 0
 for item in itertools.cycle(['A', 'B', 'C']):
     print(item)
-    counter += 1
-    if counter > 6:
+    COUNTER += 1
+    if COUNTER > 6:
         break
         
