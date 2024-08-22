@@ -74,9 +74,9 @@ lst2 = ['A', 'B', 'C']
 # Generate combinations by combining elements from both lists
 combinations_multiple_lists = list(itertools.combinations(lst1 + lst2, 2))
 print(combinations_multiple_lists)
-# Output: [('1', '2'), ('1', '3'), ('1', 'A'), ('1', 'B'), ('1', 'C'), 
-#          ('2', '3'), ('2', 'A'), ('2', 'B'), ('2', 'C'), 
-#          ('3', 'A'), ('3', 'B'), ('3', 'C'), 
+# Output: [('1', '2'), ('1', '3'), ('1', 'A'), ('1', 'B'), ('1', 'C'),
+#          ('2', '3'), ('2', 'A'), ('2', 'B'), ('2', 'C'),
+#          ('3', 'A'), ('3', 'B'), ('3', 'C'),
 #          ('A', 'B'), ('A', 'C'), ('B', 'C')]
 
 # Display the number of combinations generated
@@ -86,8 +86,8 @@ print(len(combinations_multiple_lists))
 banner("Example 6: Using itertools.combinations with a String")
 
 # Generate combinations of characters from a string
-string = 'ABCD'
-combinations_string = list(itertools.combinations(string, 3))
+STRING = 'ABCD'
+combinations_string = list(itertools.combinations(STRING, 3))
 print(combinations_string)
 # Output: [('A', 'B', 'C'), ('A', 'B', 'D'), ('A', 'C', 'D'), ('B', 'C', 'D')]
 
