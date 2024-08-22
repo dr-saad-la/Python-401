@@ -107,9 +107,9 @@ print(tuple((k, tuple(g)) for k, g in itertools.groupby(t)))
 # Group characters in a string
 banner("Example 7: Grouping Characters in a String")
 
-s = 'aaabbcaa'
-print([(k, list(g)) for k, g in itertools.groupby(s)])
+S = 'aaabbcaa'
+print([(k, list(g)) for k, g in itertools.groupby(S)])
 # Output: [('a', ['a', 'a', 'a']), ('b', ['b', 'b']), ('c', ['c']), ('a', ['a', 'a'])]
 
-print([(k, ''.join(g)) for k, g in itertools.groupby(s)])
+print([(k, ''.join(g)) for k, g in itertools.groupby(S)])
 # Output: [('a', 'aaa'), ('b', 'bb'), ('c', 'c'), ('a', 'aa')]
